@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Production (เมื่อโดเมนพร้อม)
+Sitemap: https://www.vertexinfra.co.th/sitemap.xml
+
+# GitHub Pages ชั่วคราว (ถ้ายังไม่มีโดเมน — ใช้บรรทัดนี้แทนบรรทัดด้านบน)
+# Sitemap: https://imaiiveco-max.github.io/vertex-website/sitemap.xml
