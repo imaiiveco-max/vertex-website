@@ -31,8 +31,28 @@ nav.s{background:rgba(5,11,21,.86);backdrop-filter:blur(14px);border-color:var(-
 .lg b{display:block;font:600 1.05rem/1 'Montserrat';letter-spacing:.3em}
 .lg small{display:block;width:0;min-width:100%;white-space:nowrap;font:500 .5rem/1 'Montserrat';letter-spacing:.2em;color:var(--gold);margin-top:6px}
 footer .lg small{font-size:.44rem}
-.nl{display:flex;gap:30px;font-size:.9rem;color:var(--mu);margin-left:auto;margin-right:30px}
+.nl{display:flex;gap:30px;font-size:.9rem;color:var(--mu);margin-left:auto;margin-right:30px;align-items:center}
 .nl a:hover{color:var(--gold2)}
+.nl-ct{display:inline-flex;align-items:center;gap:7px}
+.nl-ct .i{width:16px;height:16px;color:var(--gold2);flex:none}
+.ci-ph .ph-soon{color:var(--mu);letter-spacing:.08em}
+.nd{position:relative}
+.nd-t{display:flex;align-items:center;gap:6px;padding:0;border:0;background:none;color:inherit;font:inherit;cursor:pointer;line-height:1.75}
+.nd-t::after{content:"";border:4px solid transparent;border-top-color:currentColor;transform:translateY(2px)}
+.nd-t:hover,.nd.open .nd-t{color:var(--gold2)}
+.nd-m{display:none;position:absolute;top:calc(100% + 10px);left:0;min-width:240px;background:rgba(5,11,21,.98);border:1px solid var(--ln);border-radius:14px;padding:8px 0;box-shadow:0 20px 48px rgba(0,0,0,.45);z-index:60}
+.nd.open .nd-m{display:block}
+.nd-m a{display:block;padding:10px 18px;color:var(--mu);white-space:nowrap}
+.nd-m a:hover{color:var(--gold2);background:rgba(201,162,94,.08)}
+.ind-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:36px}
+.ind-card{padding:28px;height:100%}
+.ind-card h3{font-size:1.15rem;margin:12px 0 8px}
+.ind-card p{margin:0;color:var(--mu);font-size:.92rem;line-height:1.65}
+.goalist{list-style:none;padding:0;margin:16px 0;display:grid;gap:10px}
+.goalist li{padding:14px 16px;border:1px solid var(--ln);border-radius:12px;background:rgba(13,26,45,.5);font-size:.9rem;color:var(--mu)}
+.goalist b{color:var(--gold2);display:block;margin-bottom:4px;font-family:Montserrat,sans-serif}
+.src{font-size:.82rem;color:var(--mu);margin-top:32px;padding-top:20px;border-top:1px solid var(--ln)}
+.src a{color:var(--gold2)}
 .lt{display:flex;align-items:center;gap:8px;margin:0}
 .lt button{font:500 .9rem/1.75 'Noto Sans Thai','Montserrat',sans-serif;padding:0;border:0;background:none;color:var(--mu);cursor:pointer;transition:color .3s}
 .lt button+button::before{content:"/";color:rgba(185,192,204,.4);margin-right:8px}
@@ -144,6 +164,8 @@ html.memorial-tone{filter:grayscale(1)}
 .lt{margin-left:auto;margin-right:12px}
 .nl{margin:0;display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:16px;padding:22px 24px;background:rgba(5,11,21,.97);border-bottom:1px solid var(--ln)}
 .nl.o{display:flex}#mb{display:block}
+.nd-m{position:static;box-shadow:none;border:0;background:transparent;padding:4px 0 8px 8px;margin:0}
+.nd-m a{padding:8px 0;white-space:normal}
 .hero-bg img{width:100%;height:100%;right:0;top:0;transform:none;opacity:.4;-webkit-mask-image:none;mask-image:none}
 .g2,.sol,.ct,.ms{grid-template-columns:1fr}.sol:nth-child(even) .pic{order:0}
 .vals{grid-template-columns:repeat(2,1fr)}.fr{grid-template-columns:1fr}
